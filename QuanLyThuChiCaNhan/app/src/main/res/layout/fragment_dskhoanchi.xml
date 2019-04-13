@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="VectorDrawableCompat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="50">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Danh Sách Các Khoản Chi"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/imgreloadchi"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:src="@drawable/reload"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/rvChi"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="49"
+            android:paddingTop="20dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="20dp">
+
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum="4"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Tổng Chi:"
+                android:gravity="right"
+                android:textSize="16dp"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tvChi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="- 0"
+                android:textColor="#FD0404"
+                android:gravity="right"
+                android:textSize="16dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="VNĐ"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:textStyle="italic"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabAddChi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/add"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="35dp"/>
+
+
+</FrameLayout>

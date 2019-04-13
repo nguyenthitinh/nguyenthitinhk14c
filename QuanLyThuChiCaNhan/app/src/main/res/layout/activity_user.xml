@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".Activity.UserActivity"
+    android:weightSum="3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="#51B442">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/person"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textSize="15dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Trang Chủ Quản Lý"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginLeft="30dp"/>
+
+    <TextView
+        android:id="@+id/updateAcc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Cập nhật thông tin"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginLeft="30dp"/>
+    <TextView
+        android:id="@+id/changePass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Đổi mật khẩu"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginLeft="30dp"/>
+
+    <FrameLayout
+        android:id="@+id/frUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingRight="30dp">
+
+    </FrameLayout>
+
+</LinearLayout>

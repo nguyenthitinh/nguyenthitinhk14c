@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Activity.RegisterActivity"
+    android:background="@drawable/bg1"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="200dp">
+
+
+        <EditText
+            android:id="@+id/edName"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:ems="12"
+            android:drawableLeft="@drawable/user"
+            android:background="@drawable/txtbackgroud"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:maxLength="50"
+            android:inputType="textPersonName"
+            android:hint="Tên tài khoản"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/edPass"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:ems="12"
+            android:drawableLeft="@drawable/key"
+            android:background="@drawable/txtbackgroud"
+            android:hint="Mật khẩu"
+            android:textSize="15dp"
+            android:maxLength="12"
+            android:gravity="center"
+            android:inputType="textPassword"
+            android:textColor="#000000"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:id="@+id/edCnfPass"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:ems="12"
+            android:drawableLeft="@drawable/key"
+            android:background="@drawable/txtbackgroud"
+            android:hint="Nhập lại mật khẩu"
+            android:maxLength="12"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:inputType="textPassword"
+            android:textColor="#000000"
+            android:layout_marginTop="15dp"/>
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:text="Đăng Ký"
+            android:textColor="#123"
+            android:textSize="15dp"
+            android:background="@drawable/duongvien_bogoc"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:text="Bạn đã có tài khoản !   "
+            android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đăng nhập"
+            android:textSize="17dp"
+            android:textColor="#278027"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</LinearLayout>

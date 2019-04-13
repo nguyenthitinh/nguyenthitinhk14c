@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/main"
+            android:icon="@drawable/home"
+            android:title="Trang Chủ" />
+        <item
+            android:title="Quản Lý Thu">
+            <menu>
+                <item android:id="@+id/dsThu"
+                    android:icon="@android:drawable/ic_dialog_dialer"
+                    android:title="Danh Sách Khoản Thu" />
+                <item android:id="@+id/tkThu"
+                    android:icon="@android:drawable/ic_dialog_map"
+                    android:title="Thống Kê Khoản Thu"/>
+            </menu>
+        </item>
+        <item
+            android:title="Quản Lý Chi">
+            <menu>
+                <item android:id="@+id/dsChi"
+                    android:icon="@android:drawable/ic_dialog_dialer"
+                    android:title="Danh Sách Chi" />
+                <item android:id="@+id/tkChi"
+                    android:icon="@android:drawable/ic_dialog_map"
+                    android:title="Thống Kê Chi"/>
+            </menu>
+        </item>
+
+        <item android:title="">
+            <menu>
+                <item
+                    android:id="@+id/feedback"
+                    android:icon="@android:drawable/ic_dialog_email"
+                    android:title="Phản Hồi" />
+            </menu>
+        </item>
+
+
+        <item
+            android:id="@+id/logout"
+            android:icon="@android:drawable/stat_sys_warning"
+            android:title="Đăng Xuất" />
+    </group>
+</menu>

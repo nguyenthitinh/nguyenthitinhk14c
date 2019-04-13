@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bogoc"
+        android:orientation="horizontal"
+        android:paddingTop="8dp"
+        android:paddingBottom="5dp"
+        android:weightSum="10">
+
+        <ImageView
+            android:id="@+id/imgthu"
+            android:layout_width="15dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:src="@drawable/thu"
+            android:textColor="#000000"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tvidthu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvsotienthu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tvidthu"
+                android:text="+ 100 000"
+                android:textColor="#37BE10"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvngaythu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2019-02-01"
+                android:textColor="#000000"
+                android:textSize="11dp"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="5"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvloaithu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loại Chi"
+                android:textColor="#000000"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvcuthethu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mô Tả"
+                android:textColor="#000000"
+                android:textSize="11dp"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/imgedit"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@android:drawable/ic_menu_edit" />
+
+            <ImageView
+                android:id="@+id/imgdelete"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:src="@android:drawable/ic_menu_delete" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgr"
+    tools:context=".Activity.UpdateActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Title"
+        android:text="CẬP NHẬT KHOẢN THU"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"/>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Số tiền: "
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:layout_marginLeft="20dp"/>
+        <EditText
+            android:id="@+id/SoTien"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:inputType="number"
+            android:layout_height="wrap_content"
+            android:hint="VNĐ"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Loại Thu: "
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:layout_marginLeft="20dp"/>
+
+        <RadioGroup
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/BoMeGui"
+                android:text="Bố Mẹ Gửi"
+                android:checked="true"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/HocTap"
+                android:text="Học Tập"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/CongViec"
+                android:text="Công Việc"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Khac"
+                android:text="Khác"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Ngày Thu: "
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:layout_marginLeft="20dp"/>
+        <EditText
+            android:id="@+id/NgayThu"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:inputType="date"
+            android:layout_height="wrap_content"
+            android:hint="15-01-2019"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Chi Tiết: "
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:layout_marginLeft="20dp"/>
+        <EditText
+            android:id="@+id/CuThe"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:maxLength="50"
+            android:layout_height="wrap_content"
+            android:hint="Học Bổng, Lương, ..."
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:inputType="text"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnUpdate"
+            android:layout_gravity="center"
+            android:background="@drawable/duongvien_bogoc"
+            android:text="Cập nhật"/>
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnHuy"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/duongvien_bogoc"
+            android:text="Hủy"/>
+
+    </LinearLayout>
+
+</LinearLayout>

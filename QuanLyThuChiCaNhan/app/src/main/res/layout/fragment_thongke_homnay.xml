@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgr">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Danh Sách Các Khoản Thu Trong Ngày"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+                <ListView
+                    android:id="@+id/rvThu"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="9"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="20dp">
+
+                </ListView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:layout_gravity="bottom|end"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Tổng Thu:"
+                        android:gravity="right"
+                        android:textSize="12dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/tvThu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="+ 0"
+                        android:textColor="#35AD19"
+                        android:gravity="right"
+                        android:textSize="13dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="VNĐ"
+                        android:textSize="12dp"
+                        android:textColor="#000000"
+                        android:textStyle="italic"/>
+                </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
